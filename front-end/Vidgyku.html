@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div class="container">
+        <img src="/img/logo.jpg" alt="Logo" width="100px" class="photo">
+        <h1>SunTravel</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html#">Головна</a></li>
+                <li>
+                    <a href="./Napriamku.html">Напрямки</a>
+                    <ul>
+                        <li><a href="./Napriamku.html#travel50k">Подорожі до 50 тисяч</a></li>
+                        <li><a href="./Napriamku.html#travel200k">Подорожі до 200 тисяч</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./kontaktu.html">Контакти</a></li>
+                <li><a href="./Vidgyku.html">Відгуки</a></li>
+                <li><button onclick="openModal()">Рестрація</button>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+     <!-- Main Section -->
+         <!-- Секція відгуків -->
+         <main>
+             <section class="review-section">
+                 <div class="review">
+                     <h3>Іван Петров</h3>
+                     <p>"Чудова подорож! Організація на найвищому рівні, буду звертатися ще!"</p>
+                     <p class="rating">Оцінка: ★★★★★</p>
+                 </div>
+                 <div class="review">
+                     <h3>Олена Сидоренко</h3>
+                     <p>"Відмінний сервіс і приємний персонал. Враження залишились тільки позитивні."</p>
+                     <p class="rating">Оцінка: ★★★★☆</p>
+                 </div>
+             </section>
+     
+             <!-- Форма додавання відгуку -->
+             <section class="review-form">
+                 <h2>Залишити відгук</h2>
+                 
+                     <label for="name">Ваше ім'я:</label>
+                     <input >
+     
+                     <label for="email">Електронна пошта:</label>
+                     <input >
+     
+                     <label for="review">Ваш відгук:</label>
+                     <input >
+     
+                     <button type="submit">Надіслати</button>
+                
+             </section>
+         </main>
+     
+         <!-- Footer -->
+         <footer>
+             <p>Подорожуйте разом з нами</p>
+         </footer>
+         <a href="#top" class="scroll-to-top">На початок сторінки</a>
+         <div id="modalWindow" class="modal">
+            <div onclick="openModal()" class="modal-content">
+                <div class="register-container">
+                    <h1>Реєстрація</h1>
+                    <form>
+                        <div class="input-group">
+                            <label for="username">Логін:</label>
+                            <input type="text" id="username" name="username" required="">
+                        </div>
+                        <div class="input-group">
+                            <label for="password">Пароль:</label>
+                            <input type="password" id="password" name="password" required="">
+                        </div>
+                        <div class="input-group">
+                            <label for="confirm-password">Підтвердіть пароль:</label>
+                            <input type="password" id="confirm-password" name="confirm_password" required="">
+                        </div>
+                        <button id="endRees" class="register-button">Зареєструватись</button>
+                    </form>
+                </div>
+            </div> 
+        </div>
+     </body>
+     <script src="./script.js"></script>
+     </html>
+     
